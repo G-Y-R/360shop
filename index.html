@@ -5,11 +5,29 @@
 	<title>360商城</title>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/public.css">
+	  <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 </head>
 <body>
 
-	<div class="banner"></div>
+	<div class="banner">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/ban1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/ban2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/ban3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/ban4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/ban5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/ban6.jpg" alt=""></div>
+      
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    </div>
+	</div>
     <nav class="nav">
     	<a href="javascript:">
     		<img src="image/t0144479a9aa7273a90.png" alt="">
@@ -469,6 +487,15 @@
 		<p>360商城2013-2016 版权所有</p>
 	</div>
 </div>	
+     <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
 </body>
 </html>
